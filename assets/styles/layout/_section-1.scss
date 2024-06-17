@@ -1,0 +1,87 @@
+// Main
+.section-1 {
+  @include centerChild;
+
+
+  @media screen and (max-width: 700px) {
+    width: 90%;
+    display: block;
+    align-items: center;
+
+  @media screen and (max-width:650px){
+    width: 90%;
+    display: block;
+    align-items: center;
+    margin: 20px auto;
+  }
+  }
+  
+
+  .story {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    min-width: 700px;
+    background: $color1;
+    position: relative;
+    padding: 50px 0;
+    padding-right: 0;
+
+    h2 {
+      
+      position: relative;
+      width: 50%;
+      margin: 20px auto;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+
+      @media screen and (max-width:700px) {
+        font-size: 1.7em;
+      }
+    }
+
+    h4 {
+      font-family: "MerriW", sans-serif;
+      margin: 40px;
+      color: $color2;
+      text-align: center; // Align h4 centrally if needed
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        width: 30%; // Increase width of pseudo-elements
+        height: 1px; // Increase height of pseudo-elements
+        background: $color3;
+      }
+
+      &:before {
+       transform: translate(-110%, 10px); 
+      }
+
+      &:after {
+      transform: translate(10%, 10px); // Mov
+      }
+    }
+
+    p {
+      font-family: "MerriW", sans-serif;
+      font-style: italic;
+      font-size: 0.9rem;
+      line-height: 30px;
+      color: $color2;
+      width: 50%;
+      margin: 20px auto;
+    }
+
+    #pico01 {
+      width: 80%;
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

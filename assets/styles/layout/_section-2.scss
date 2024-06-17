@@ -1,0 +1,135 @@
+// Main
+.section-2 {
+  width: 70%;
+  min-width: 700px;
+  margin: 0 auto;
+  padding: 0 auto;
+  background: $color1;
+  border-top: 1px solid $color3;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 90%;
+  }
+  .story {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+
+    @media screen and (max-width: 700px) {
+      width: 90%;
+      display: block;
+    }
+  }
+
+  h4 {
+    font-size: 0.8rem;
+    font-family: "MerriW", sans-serif;
+    color: $color2;
+    line-height: 30px;
+    position: relative; // Necessary for positioning pseudo-elements
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1rem;
+    color: $color2;
+    text-transform: uppercase;
+    line-height: 25px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 0.8rem;
+    margin-bottom: 40px;
+    text-align: left;
+    width: 80%;
+    margin: 20px auto;
+    font-family: "MerriW", sans-serif;
+    line-height: 30px;
+    color: $color2;
+  }
+
+  img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+
+    @media screen and (max-width: 700px) {
+      margin: 8px auto;
+
+    }
+  }
+
+  .container-left {
+    display: flex;
+    justify-content: space-around; // Center children horizontally
+    align-items: center; // Center children vertically
+    background: $color1;
+    flex-direction: column;
+    padding: 40px 0;
+    text-align: center;
+
+    @media screen and (max-width: 700px) {
+      width: 90%;
+
+    @media screen and (max-width:650px){
+      width: 90%;
+      display: block;
+      align-items: center;
+      margin: 20px auto;
+    }
+    }
+
+    .news-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+  }
+
+  .container-left:first-child {
+    border-right: 1px solid $color3;
+  }
+  .news-right:first-child {
+    border-right: 1px solid $color3;
+  }
+
+ 
+  .container-right {
+    display: flex;
+    justify-content: space-around; // Center children horizontally
+    align-items: center; // Center children vertically
+    background: $color1;
+    flex-direction: column;
+    padding: 40px 0;
+    text-align: center;
+
+    @media screen and (max-width: 700px) {
+      width: 90%;
+
+    @media screen and (max-width:650px){
+      width: 90%;
+      display: block;
+      align-items: center;
+      margin: 20px auto;
+    }
+    }
+
+
+
+    p, h4 {
+      font-family: "MerriW", sans-serif;
+    }
+  }
+}

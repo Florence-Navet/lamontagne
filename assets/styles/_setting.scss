@@ -1,0 +1,64 @@
+// Variables
+$color1: rgb(242, 232, 234);
+$color2: rgb(23, 23, 23);
+$color3: rgb(162, 156, 156);
+
+// Mixins
+@mixin centerChild {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// Fonts
+@font-face {
+  font-family: "Inter";
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+}
+@font-face {
+  font-family: "MerriW";
+  src: url("https://fonts.googleapis.com/css2?family=Merriweather:wght@100..900&display=swap");
+}
+
+// Buttons
+.button {
+  border: 1px solid $color2;
+  background: transparent;
+  width: 150px;
+  color: $color2;
+  text-transform: uppercase;
+  padding: 10px 0;
+  letter-spacing: 2px;
+  font-size: 0.6rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    background: $color2;
+    color: $color1;
+    border: 1px solid $color1;
+  }
+  @media screen and (max-width: 750px) {
+    width: 200px;
+    padding: 15px;
+    font-size: 0.7rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+body {
+  min-width: 100vh;
+  background: url(../images/bg.jpg) center/cover fixed;
+}

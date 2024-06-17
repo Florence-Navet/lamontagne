@@ -1,0 +1,9 @@
+// index.scss rassemble tous les fichiers Sass
+
+@import "./_setting.scss";
+@import "../styles/layout/nav";
+@import "../styles/layout/_header";
+@import "./layout/section-1";
+@import "./layout/section-2";
+@import "./layout/footer";
+
